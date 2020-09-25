@@ -15,4 +15,4 @@
 \FPeval{\ccolora}{round(255 - \colora, 0)}
 \FPeval{\ccolorb}{round(255 - \colorb, 0)}
 \FPeval{\ccolorc}{round(255 - \colorc, 0)}
-\definecolor{mycolor}{RGB}{\ccolora, \ccolorb, \ccolorc}
+\definecolor{ccolor}{RGB}{\ccolora, \ccolorb, \ccolorc}
