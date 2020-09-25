@@ -1,3 +1,7 @@
+%might have to use xcolor package; usually xcolor is imported in other packages already
+\usepackage{xcolor}
+
+
 %%% random color
 \usepackage[first=1,last=255]{lcg}
 \rand\edef\colora{\the\value{rand}}
