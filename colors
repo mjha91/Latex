@@ -1,0 +1,14 @@
+%%% random color
+\usepackage[first=1,last=255]{lcg}
+\rand\edef\colora{\the\value{rand}}
+\rand\edef\colorb{\the\value{rand}}
+\rand\edef\colorc{\the\value{rand}}
+\definecolor{rcolor}{RGB}
+{\colora, \colorb, \colorc}
+
+%%% complementary color
+\usepackage[nomessages]{fp}%
+\FPeval{\ccolora}{round(255 - \colora, 0)}
+\FPeval{\ccolorb}{round(255 - \colorb, 0)}
+\FPeval{\ccolorc}{round(255 - \colorc, 0)}
+\definecolor{mycolor}{RGB}{\ccolora, \ccolorb, \ccolorc}
